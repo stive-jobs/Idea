@@ -4,7 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import IconMap from '~/icon'
 import Call_Icon from '~/icon/Call-icon.png'
-import LanguagePage from '../language/language'
+import LanguageSelector from '../language'
+
 
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
           </div>
           <div className='flex'>
             <Link href='#' className='flex items-center px-[26px]'><Image src={Call_Icon} alt='icon' width={18} height={18} /> <span className='px-[16px]'>91 434 93 92</span></Link>
-            <LanguagePage />
+            <LanguageSelector />
           </div>
         </div>
       </div>
