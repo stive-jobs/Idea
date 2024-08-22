@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import LogoIcon from "~/icon/logo";
+import DesktopToggleMenu from "./desktopToggleMenu";
 
 const BannerNavBar = () => {
   return (
@@ -11,17 +12,15 @@ const BannerNavBar = () => {
           <LogoIcon />
         </Link>
       </div>
-      <nav className="select">
-        <select name="format" id="format">
-          <option selected disabled>
-            
-          </option>
-          <option value="pdf">PDF</option>
-          <option value="txt">txt</option>
-          <option value="epub">ePub</option>
-          <option value="fb2">fb2</option>
-          <option value="mobi">mobi</option>
-        </select>
+      <nav className="bg-pink-600 p-4">
+        <div className="container mx-auto flex justify-between items-center gap-10">
+          <div className="text-white text-xl font-bold">
+            Mahsulotlar katalogi
+          </div>
+          <div className="hidden md:block">
+            <DesktopToggleMenu />
+          </div>
+        </div>
       </nav>
     </div>
   );
