@@ -4,6 +4,7 @@ import React from "react";
 import LogoIcon from "~/icon/logo";
 import DesktopToggleMenu from "./desktopToggleMenu";
 
+
 const BannerNavBar = () => {
   return (
     <div className="container flex items-center gap-[4rem] mt-5">
